@@ -1,0 +1,115 @@
+<mxfile host="7c158ed1-ee07-4c2a-b455-493077f7ff91" modified="2020-07-24T04:12:57.001Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.47.0 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36" etag="avqI5LbmqrLPf0mGmmti" version="13.1.3">
+    <diagram id="9EyrcikLVMCrVa1dsBdZ" name="ページ1">
+        <mxGraphModel dx="2026" dy="2029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-8" value="travel_expenses_submission" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry y="-155" width="250" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-9" value="+request_date : 申請日&#10;+request_user : 申請者&#10;+purpose : 目的&#10;+total_amount :合計金額&#10;+remarks : 備考" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="HJenkgYZSzZREAK4-lz5-8" vertex="1">
+                    <mxGeometry y="30" width="250" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="HJenkgYZSzZREAK4-lz5-1" target="HJenkgYZSzZREAK4-lz5-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-15" value="出張旅費" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-420" y="-1120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-16" value="出張旅費明細" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-420" y="-880" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-18" value="出張旅費明細内訳" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-420" y="-680" width="110" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="HJenkgYZSzZREAK4-lz5-7" target="HJenkgYZSzZREAK4-lz5-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-1" value="tripcost" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-420" y="-1090" width="240" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-2" value="+start_date : 出張開始日&#10;+end_date : 終了日&#10;+employee_id : 社員ID&#10;+purpose : 目的&#10;+total_amount :合計金額&#10;+remarks : 備考" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="HJenkgYZSzZREAK4-lz5-1" vertex="1">
+                    <mxGeometry y="30" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-6" value="tripcost_detail" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-420" y="-850" width="240" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-7" value="+tripcost_id : 出張旅費ID&#10;+trip_date : 出張日&#10;+sub_total_cost : 小計" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="HJenkgYZSzZREAK4-lz5-6" vertex="1">
+                    <mxGeometry y="30" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-10" value="tripcost_item" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-420" y="-650" width="240" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-11" value="+tripcost_detail_id : 出張旅費明細ID&#10;+start_point : 開始地点&#10;+end_point : 到着地点&#10;+course : 交通手段&#10;+item_cost : 費用" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="HJenkgYZSzZREAK4-lz5-10" vertex="1">
+                    <mxGeometry y="30" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-1" value="tripcost_status" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-120" y="-850" width="240" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-2" value="+tripcost_id : 出張旅費ID&#10;+status : 申請状況&#10;+request_date : 申請日&#10;+request_employee_id : 申請者&#10;+approve_date : 承認日&#10;+approve_employee_id : 承認者&#10;+sub_total_cost : 小計" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="gkF-8fv6CQ7PWn-w2Et3-1" vertex="1">
+                    <mxGeometry y="30" width="240" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-3" value="出張旅費申請状況" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-120" y="-880" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-16" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HJenkgYZSzZREAK4-lz5-2" target="gkF-8fv6CQ7PWn-w2Et3-1" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="-230" y="-700" as="sourcePoint"/>
+                        <mxPoint x="-130" y="-800" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-21" value="部署" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="-880" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-17" value="社員" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="-1090" width="240" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-18" value="+section_id : 部署ID&#10;+user_id : ユーザーID&#10;+status : 就業状況&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="gkF-8fv6CQ7PWn-w2Et3-17" vertex="1">
+                    <mxGeometry y="30" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-25" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.45;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="gkF-8fv6CQ7PWn-w2Et3-22" target="gkF-8fv6CQ7PWn-w2Et3-18" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="210" y="-700" as="sourcePoint"/>
+                        <mxPoint x="310" y="-800" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-26" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="gkF-8fv6CQ7PWn-w2Et3-19" target="gkF-8fv6CQ7PWn-w2Et3-18" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="210" y="-700" as="sourcePoint"/>
+                        <mxPoint x="310" y="-800" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-27" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="HJenkgYZSzZREAK4-lz5-19" target="gkF-8fv6CQ7PWn-w2Et3-18" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="210" y="-700" as="sourcePoint"/>
+                        <mxPoint x="310" y="-800" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-32" value="役職" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="-880" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-19" value="section" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="-850" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-20" value="+section_lv1_name : 事業部&#10;+section_lv2_name : 部署" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="gkF-8fv6CQ7PWn-w2Et3-19" vertex="1">
+                    <mxGeometry y="30" width="200" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-22" value="employee_position" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="-850" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-23" value="position_name : 役職" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="gkF-8fv6CQ7PWn-w2Et3-22" vertex="1">
+                    <mxGeometry y="30" width="200" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-19" value="users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="-850" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="HJenkgYZSzZREAK4-lz5-20" value="+mail_address : メールアドレス&#10;+name : 氏名" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="HJenkgYZSzZREAK4-lz5-19" vertex="1">
+                    <mxGeometry y="30" width="200" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="gkF-8fv6CQ7PWn-w2Et3-33" value="個人" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="-880" width="60" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
