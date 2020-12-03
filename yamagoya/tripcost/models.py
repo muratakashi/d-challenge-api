@@ -1,10 +1,14 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, Date, DateTime
+import sys
+
+from sqlalchemy import (Boolean, Column, Date, DateTime, ForeignKey, Integer,
+                        String)
 from sqlalchemy.orm import relationship
 
-from ..db.database import BASE
+sys.path.append('../')
+from database import Base
 
 
-class TripCost(BASE):
+class TripCost(Base):
     __tablename__ = "tripcost"
     
     id = Column(Integer, primary_key=True, index=True)
