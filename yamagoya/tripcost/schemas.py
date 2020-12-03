@@ -9,7 +9,7 @@ class TripCost(BaseModel):
     end_date : date
     employee_id : int
     purpose : str
-    total_amount : int
+    total_cost : int
     remarks : int
     created_at : datetime
     updated_at : datetime

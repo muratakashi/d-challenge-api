@@ -21,8 +21,7 @@ def get_db():
 
 @app.get("/tripcost")
 def tripcost_findall(db: Session = Depends(get_db)):
-    tripcost = schemas.TripCost.select()
-    return tripcost
+    return db.query(models.TripCost).all()
 
 
 @app.get("/")

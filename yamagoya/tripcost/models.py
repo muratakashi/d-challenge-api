@@ -16,7 +16,7 @@ class TripCost(Base):
     end_date = Column(Date)
     employee_id = Column(Integer)
     purpose = Column(String)
-    total_amount = Column(Integer)
+    total_cost = Column(Integer)
     remarks = Column(String)
     created_at = Column(DateTime)
     updated_at = Column(DateTime)
